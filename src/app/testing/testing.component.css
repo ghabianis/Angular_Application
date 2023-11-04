@@ -1,0 +1,73 @@
+.main {
+    height: 125vh;
+    width: 100%;
+    padding-left: 35px;
+    display: flex;
+  }
+  
+  .card {
+    margin: 100px auto 0;
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    perspective: 700px;
+    align-items: center;
+  }
+
+ /* Add your custom styles here */
+ body {
+    padding-top: 56px;
+    transition: margin-left 0.5s;
+  }
+
+  /* Adjust padding to accommodate fixed navbar */
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    padding-top: 20px;
+    padding-left: 10px;
+    transition: left 0.5s;
+  }
+
+  .sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+
+  .navbar .user-icon {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+  }
+
+  .navbar .user-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
