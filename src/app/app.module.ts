@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TestingComponent } from './testing/testing.component';
 import { FormsModule } from '@angular/forms';
 import { DataPipePipe } from './data-pipe.pipe';
+import { ExtractCharPipe } from './pipes/extract-char.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestingComponent,
-    DataPipePipe
+    DataPipePipe,
+    ExtractCharPipe
   ],
   imports: [
     BrowserModule,
