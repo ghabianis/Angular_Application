@@ -1,0 +1,19 @@
+
+<div style="margin-left: 30%; margin-top: 10%;"> 
+<form style="margin-left: 5%;" #snapForm="ngForm">
+    <span>Add Attribute A: </span><br>
+    <input class="form-control mb-2" type="number" name="note1" [(ngModel)]="calculModule.note1" style="width: 45%;"><br>
+    <span>Add Attribute B: </span><br>
+    <input class="form-control w-25" type="number" name="note2" style="margin-bottom: 3%; width: 45%;" [(ngModel)]="calculModule.note2"><br>
+    <span>Make Decision: </span><br>
+    <input class="form-control mb-2" type="number" name="moy" style="margin-bottom: 3%;width: 45%;" [(ngModel)]="calculModule.moy"><br>
+    <button class="btn btn-primary" (click)="Addition()" style="margin-right: 2%;">Add</button>
+    <button class="btn btn-primary" (click)="multiple()" style="margin-right: 2%;">Multiple</button>
+    <button class="btn btn-primary" (click)="takeDes()">Decision</button>
+    <button class="btn btn-primary" (click)="vider()" style="margin-left: 2%;">Vider</button>
+
+    <h4 style="margin-top: 6%;">result of Addition : {{resp}}</h4><br>
+    <h4 style="margin-top: 3%;">result of Multiple : {{resp1}}</h4><br>
+    <h4 style="margin-top: 3%;">result of Decision : {{resp2}}</h4><br>
+</form>
+</div>
